@@ -1,0 +1,169 @@
+// font
+@import url("//hello.myfonts.net/count/30d80a");
+@font-face { 
+	font-family: 'futura-light';
+	src: url('/src/static/webfonts/30D80A_1_0.eot');
+	src: url('/src/static/webfonts/30D80A_0_0.eot?#iefix') format('embedded-opentype'),
+	     url('/src/static/webfonts/30D80A_0_0.woff2') format('woff2'),
+	     url('/src/static/webfonts/30D80A_0_0.woff') format('woff'),
+	     url('/src/static/webfonts/30D80A_0_0.ttf') format('truetype');
+}
+  
+@font-face {
+	font-family: 'futura-medium';
+	src: url('/src/static/webfonts/30D80A_1_0.eot');
+	src: url('/src/static/webfonts/30D80A_1_0.eot?#iefix') format('embedded-opentype'),
+	     url('/src/static/webfonts/30D80A_1_0.woff2') format('woff2'),
+	     url('/src/static/webfonts/30D80A_1_0.woff') format('woff'),
+	     url('/src/static/webfonts/30D80A_1_0.ttf') format('truetype');
+}
+
+
+// univers 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+li{
+    list-style: none;
+}
+// header and nav start
+.header-logo{
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.header-logo a{ 
+    color: #000;
+    font-size: 2.8rem;
+    font-weight: 550;
+    opacity: 0.9;
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    // margin: 0 0 0 130px;
+}
+.nav-bar ul li a{
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+    letter-spacing: 0.8px;
+    color: #000;
+    font-family: 'futura-light';
+}
+.nav-bar ul li a:hover{
+    opacity: 0.5;
+}
+.nav-bar ul li input{
+    width: 90px;
+    height: 14px;
+    border: solid 1px black;
+}
+.header-box{
+    background-color: #000;
+    padding: 0.1rem 0;
+    margin-top: 5px;
+}
+// header and nav end
+
+//  hero-sider start
+.post-slider{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.post-wrapper{
+    width: 84%;
+    height: 500px;
+    margin: 27px 0;
+    border: 6px solid #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.post-slider .post-wrapper .post{
+    height: 475px;
+    margin: 0 5px;
+}
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 95px;
+    color: #000;
+    cursor: pointer;
+    font-size: 3rem;
+    
+}
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    left: 95px;
+    color: #000;
+    cursor: pointer;
+}
+.slider-image{
+    width: 100%;
+    height: 450px; 
+}
+.post-info h4{
+    text-align: center;
+    background: #000;
+    opacity: 0.8;
+}
+.post-info a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'futura-light';
+}
+.opneMenu{
+    margin: -30px 45px;
+    font-weight: 900;
+    color: #000;
+    font-size: 25px;
+    display: none;
+}
+.closeMenu{
+    display: none;
+}
+@media(max-width:980px){
+    .header-box{
+        display: none;
+    }
+    .header-logo a{ 
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 600;
+        justify-content: center;
+    }
+    .post-slider .next{
+        display: none;
+    }
+    .post-slider .prev{
+        display: none;
+    }
+    .opneMenu{
+        display: block;
+    }
+}
+@media(max-width:280px){
+    .header-logo a{ 
+        display: flex;
+        font-size: 0.8rem;
+        font-weight: 600;
+        justify-content: center;
+    }
+    .opneMenu{
+        margin: -25px 45px;
+        font-size: 15px;
+    }
+}
+//  hero-sider end
